@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>eWallet | Registro</title>
+  <script type="text/javascript" src="../js/estadi.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<body id="regis">
+<header>
+	<h1><img src="../img/logo.png"> <a><button onclick="salir()" id="salir">Cerrar sesion</button></a></h1>
+<nav>
+<ul class="sidenav">
+   <li><a href="ewallet.html">Inicio</a></li>
+  <li><a href="cuentas.html">Cuentas</a></li>
+  <li><a href="ingresos.html">Ingresos</a></li>
+  <li><a href="gastos.html">Gastos</a></li>
+  <li><a href="conf.html">Configuraciones</a></li>
+  <li><a class="active"  href="estadi.html">Estadisticas</a></li>
+</ul>
+</nav>
+</header>
+<section>
+	<div>
+<h2 id="nom"></h2><br>
+
+<h2>Monto actual:</h2>
+<h2 id="monto"></h2><br><br>
+
+	</div>
+<select id="estaT">
+  <option>Mensuales</option>
+  <option>Anuales</option>
+  <option>Periodo</option>
+</select>
+
+<br><br><br>
+<select id="estaC">
+  <option>Ingresos VS Gastos</option>
+  <option>Ingresos</option>
+  <option>Gastos</option>
+  <br><br><br>
+</select>
+<br><br><br>
+<a href="#openModal" onclick="dat()"><button>Ver los datos</button></a>
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <h3>Comparacion</h3><br>
+    <div id="vs">
+      
+    </div>
+
+    <div id="in">
+      
+    </div>
+
+    <div id="g">
+      
+    </div>
+           
+  </div>
+</div>
+</section>
+
+</body>
+</html>

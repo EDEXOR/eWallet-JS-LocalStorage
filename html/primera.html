@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>eWallet | Registro</title>
+  <script type="text/javascript" src="../js/login.js"></script>
+  <script type="text/javascript" src="../js/login.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<body id="regis">
+<header>
+  <h1><img src="../img/logo.png"><a><button onclick="salir()" id="salir">Cerrar sesion</button></a><nav class="topnav">
+  <a onclick="salir()"><button>Salir</button></a>
+</h1>
+  
+
+</header>
+ <center> 
+  <article id="primera">
+
+      <form name="hola"> 
+ 
+           <h2>PRIMERA VEZ QUE ENTRAS</h2><br>
+           <h2>necesitamos saber unos datos </h2><br><br>
+        
+           <h4>Monto que posee en efectivo:</h4><br>
+           <input type="number" name="quantity" min="1" max="10000000" class="Input" id="monto"  value="" placeholder="$ 0.00"  size="20" onkeypress="montov()" required/><BR><BR><br><br>
+
+           <h3>Tus cuentas:</h3><br>
+           
+           <h4>Banco:</h4><br>
+
+           <input name="banco" type="text"   min="1" max="8" id="banco"  value="" placeholder=" -- " onkeypress="bancov()" size="20" required/><BR><BR>
+           <h4># Cuenta:</h4><br>
+           <input name="cuenta" type="text"  min="1" max="500" id="cuenta" value=""  placeholder="xxxxxxxxxxxx" size="20" onkeypress="cuentav()" required/><BR><BR>
+           <h4>Saldo actual:</h4><br>
+           <input name="saldo" type="number"  min="1" max="1000000" id="saldo"  value="" placeholder="$ 0.00"  size="20" onkeypress="saldov()" required/><BR><br>
+
+              <input value="Entrar"  target="_parent" onclick="primera()" type="button" class="boton"/> 
+              
+
+           
+
+          
+
+    </form>
+
+  </article>
+  </center>
+</section>
+
+</body>
+</html>

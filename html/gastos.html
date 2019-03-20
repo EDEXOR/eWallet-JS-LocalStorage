@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>eWallet | Registro</title>
+  <script type="text/javascript" src="../js/gastos.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<body id="regis">
+<header>
+	<h1><img src="../img/logo.png"><a><button onclick="salir()" id="salir">Cerrar sesion</button></a></h1>
+<nav>
+<ul class="sidenav">
+   <li><a href="ewallet.html">Inicio</a></li>
+  <li><a href="cuentas.html">Cuentas</a></li>
+  <li><a  href="ingresos.html">Ingresos</a></li>
+  <li><a class="active"  href="gastos.html">Gastos</a></li>
+  <li><a href="conf.html">Configuraciones</a></li>
+  <li><a href="estadi.html">Estadisticas</a></li>
+</ul>
+</nav>
+</header>
+<section>
+	<div id="datos">
+		<h2>Gastos:</h2><br>
+    <h4>Total de gastos:</h4><br>
+    <h3 id="efe"></h3><br>
+  </div>
+  <div>
+  <h4>Gastos:</h4>
+  <br><a href="#openModal"><button>Nuevo gasto</button></a><br><br><br>
+  <table >
+  <tr>
+    <th>Fecha</th>
+    <th>Monto</th>
+    <th>Motivo</th>
+    <th>Medio</th>
+    <th>N° Cuenta o Tarjeta</th>
+  </tr>
+  <tr id="tabla">
+    
+  </tr>
+</table>
+</div>
+<br><br>
+
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <h3>Nuevo ingreso:</h3><br>
+           <h4>Fecha:</h4><br>
+           <input type="date" name="quantity" min="1" max="1000000" id="fecha" class="Input" value=""  size="20" required/><BR><BR>
+           <h4>Monto:</h4><br>
+           <input type="number" name="quantity" min="1" max="1000000" id="monto" class="Input" placeholder="$ 0.00" value=""  size="20" required/><BR><BR>
+           <h4>Motivo:</h4><br>
+           <select id="motivo" onclick="ver()">
+             <option>Pago de celular </option>
+             <option>Pago de luz eléctrica</option>
+             <option>Pago de agua</option>
+             <option>Pago de casa/alquiler</option>
+             <option>Pago de cable</option>
+             <option>Pago de internet</option>
+             <option>Pago de educación</option>
+             <option>Supermercado</option>
+             <option>Cine</option>
+             <option>Discoteca</option>
+             <option>Teatro</option>
+             <option>Ropa</option>
+             <option>Restaurante</option>
+             <option>Tecnología</option>
+             <option>Mascota</option>
+             <option>Gasolina</option>
+             <option>Reparaciones</option>
+           </select><BR>
+           <h4>Medio</h4><br>
+           <select id="medio" onclick="ver()">
+             <option>Cuenta bancaria</option>
+             <option>Tarjeta de credito</option>
+             <option>Efectivo</option>
+           </select>
+           <BR><br> 
+           <div id="metodo">
+           <h4>Cuenta</h4><br>
+           <select id="tarjeta">
+           </select>
+           </div>
+           <div id="metodo2">
+           <h4>Cuenta</h4><br>
+           <select id="cuentas">
+           </select><BR><br>
+           </div>
+              <input value="Nueva cuenta"  target="_parent" onclick="nueva()" type="button" class="boton"/><br><br>
+  </div>
+</div>
+<br><br><br>
+		
+	</div>
+</section>
+
+</body>
+</html>

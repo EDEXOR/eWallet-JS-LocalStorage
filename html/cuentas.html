@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>eWallet | Registro</title>
+  <script type="text/javascript" src="../js/cuentas.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<body id="regis">
+<header>
+	<h1><img src="../img/logo.png"> <a><button onclick="salir()" id="salir">Cerrar sesion</button></a></h1>
+<nav>
+<ul class="sidenav">
+   <li><a href="ewallet.html">Inicio</a></li>
+  <li><a class="active" href="cuentas.html">Cuentas</a></li>
+  <li><a href="ingresos.html">Ingresos</a></li>
+  <li><a href="gastos.html">Gastos</a></li>
+  <li><a href="conf.html">Configuraciones</a></li>
+  <li><a href="estadi.html">Estadisticas</a></li>  
+</ul>
+</nav>
+</header>
+<section>
+	<div id="datos">
+  
+		<h2>Cuentas:</h2><br>
+  <a>
+		<h4>Total en cuentas:</h4><br>
+    <h3 id="efe"></h3><br>
+  </a>
+    <h4>Total en efectivo:</h4><br>
+    <h3 id="cu"></h3><br>
+    <h4>Monto total:</h4><br>
+    <h3 id="mon"></h3><br>
+  </div>
+  <div>
+    <h4>Cuentas:</h4><br>
+  <a href="#openModal"><button>Nueva cuenta</button></a><a href="tarjetas.html"><button id="tarje">Tarjetas de credito</button></a><br><br><br><br>
+
+<table >
+  <tr>
+    <th>Banco</th>
+    <th>Numero de cuenta</th>
+    <th>Saldo</th>
+  </tr>
+  <tr id="tabla">
+    
+  </tr>
+</table>
+</div>
+
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <h3>Tus cuentas:</h3><br>
+           <h4>Banco:</h4><br>
+           <input type="text" name="quantity" min="1" max="1000000" id="banco" class="Input" value=""  size="20" required/><BR><BR>
+           <h4># Cuenta:</h4><br>
+           <input type="text" name="quantity" min="1" max="1000000" id="cuenta" class="Input" placeholder="xxxx xxxx xxxx xxxx" value=""  size="20" required/><BR><BR>
+           <h4>Saldo actual:</h4><br>
+           <input type="number" name="quantity" min="1" max="1000000" id="saldo" class="Input" value=""  size="20" required/><BR><br>
+              <input value="Nueva cuenta"  target="_parent" onclick="nueva()" type="button" class="boton"/><br><br>
+  </div>
+</div>
+
+		
+    <br><br>
+	</div>
+</section>
+
+</body>
+</html>
